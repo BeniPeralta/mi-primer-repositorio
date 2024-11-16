@@ -32,7 +32,7 @@ class Banco{
     }
     Cliente crearCliente(String nombre, String sexo, int edad, int numero){
         System.out.println("Creando cliente.....");
-        Cliente cliente=new Cliente(numero, sexo, edad, nombre);
+        Cliente cliente=new Cliente(nombre, sexo, edad, numero);
 
         for(int i=0; i < clientes.length;i++){
             if(clientes[i]==null){
